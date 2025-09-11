@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter Tag name</label>
+    <input type="text" required> <br><br>
+    <label for="">Enter data</label>
+    <input type="text" required><br><br>
+    <button onclick="generate()">Make it</button>
+
+    <script>
+        function generate(){
+            let tag=document.getElementsByTagName("input")[0].value;
+            let data=document.getElementsByTagName("input")[1].value;
+
+            let child=document.createElement(tag);
+            child.innerText=data;
+
+            let parent=document.getElementsByTagName("body")[0];
+            parent.appendChild(child);
+        }
+    </script>
+</body>
+</html>

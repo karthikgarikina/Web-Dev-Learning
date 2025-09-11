@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="Sivaji HD";
+        console.log(str.length);
+        console.log(str.replace("S","SS"));
+        let d=new Date();
+        console.log(d.getDate());
+
+        // arrays 
+        let x = [1,2,3,4,7,8];
+        console.log(x);
+        x.push(5);
+        console.log(`after the add last  element :- ${x}`);
+        x.unshift(0);
+        console.log(`after the add first element :- ${x}`);
+        x.pop();
+        console.log("after the pop :-",x);
+        x.splice(2,0,100);
+        console.log(x);
+        console.log(x.slice(1,4));
+        let y = [9,3,5,1,7,3,-2,-5];
+        console.log(y.sort());
+        
+        x.map((ele,index)=>{
+            console.log(ele,index);
+        })
+        let od = x.filter(ele => ele%2 !== 0);
+        let ev = x.filter(ele => ele%2 == 0);
+        console.log(`Odd elements in x array ${od}`);
+        console.log(`even elements in x array ${ev}`);
+        console.log(x.includes(10));
+        let s = "hello _ Karthi _ bagunavvu"
+        console.log("length :- ",s.length)
+        console.log("indexOf :- ",s.indexOf("K"))
+        console.log("replace :- ",s.replace("K","Kaa"))
+        console.log("lowercase :- ",s.toLowerCase())
+        console.log("uppercase :- ",s.toUpperCase())
+        console.log("spilt :- ",s.split("_"))
+        console.log("slice :- ",s.slice(6,12))
+        console.log(s.trim(""))
+        let x1 = {};
+        x1[1]=2;
+        x1[2]=3;
+        x1[3]=100;
+        console.log(Object.keys(x));
+        console.log(Object.values(x));
+        console.log(Object.entries(x));
+    </script>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box{
+        height: 150px;
+        width: 150px;
+        border: 2px solid red;
+        display: inline-block;
+        margin: 10px;
+    }
+    .static-box {
+      /* Default static positioning */
+    }
+    .relative-box{
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+    .fixed-box{
+        position: fixed;
+        bottom: 100px;
+        left: 10px;
+    }
+    .absolute-box{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .sticky-box {
+        position: sticky;
+        top: 100px;
+      }
+  </style>
+</head>
+<body>
+  <div class="static-box box">Static Positioning</div>
+  <div class="relative-box box">Relative positioning</div>
+  <div class="fixed-box box"> Fixed Positioning</div>
+  <div class="absolute-box box">Absolute Positioning</div>
+  <div class="sticky-box box">Sticky Positioning</div>
+  <br>
+
+
+
+  <p>
+    The expression i.find(temp) != std::string::npos is a common way to check if a substring (temp) exists within a string (i) in C++.
+    
+    Explanation:
+    find Function:
+    
+    i.find(temp) searches for the first occurrence of the substring temp in the string i.
+    If temp is found, it returns the index of the first character of temp within i.
+    If temp is not found, it returns std::string::npos.
+    std::string::npos:
+    
+    std::string::npos is a constant defined in the std::string class. It represents an invalid position or "not found."
+    Its exact value is typically the largest possible value of std::size_t (an unsigned integer type).
+    != std::string::npos:
+    
+    This checks whether the result of i.find(temp) is not equal to std::string::npos, meaning that the substring temp was found somewhere within the string i.
+    Example:
+    cpp
+    Copy
+    Edit
+    #include <iostream>
+    #include <string>
+    
+    int main() {
+        std::string i = "hello world";
+        std::string temp = "world";
+    
+        if (i.find(temp) != std::string::npos) {
+            std::cout << "'" << temp << "' is found in '" << i << "'.\n";
+        } else {
+            std::cout << "'" << temp << "' is not found in '" << i << "'.\n";
+        }
+    
+        return 0;
+    }
+    Output:
+    csharp
+    Copy
+    Edit
+    'world' is found in 'hello world'.
+    Use Cases:
+    Substring Check:
+    To see if a string contains another string.
+    Position Retrieval:
+    If you need to know the exact position where the substring starts, you can directly use the result of find.
+    Example:
+    cpp
+    Copy
+    Edit
+    size_t pos = i.find(temp);
+    if (pos != std::string::npos) {
+        std::cout << "Found '" << temp << "' at position " << pos << ".\n";
+    }
+    Output:
+    arduino
+    Copy
+    Edit
+    Found 'world' at position 6.
+    Edge Cases:
+    Empty temp:
+    If temp is an empty string, find always returns 0, as an empty string is considered to be found at the beginning of any string.
+    Example:
+    cpp
+    Copy
+    Edit
+    std::string i = "hello";
+    std::cout << i.find("") << std::endl; // Outputs 0
+    temp Larger Than i:
+    If temp is longer than i, find always returns std::string::npos.
+    Case Sensitivity:
+    find is case-sensitive. To perform a case-insensitive search, additional logic is needed (e.g., converting both strings to lowercase).
+    Comparison with ==:
+    If you are only looking for an exact match, you should use == instead of find.
+    Example:
+    cpp
+    Copy
+    Edit
+    if (i == temp) {
+        std::cout << "Strings are exactly equal.\n";
+    }
+    find is used when you're looking for a substring, not an exact match.
+    
+    
+The expression i.find(temp) != std::string::npos is a common way to check if a substring (temp) exists within a string (i) in C++.
+
+Explanation:
+find Function:
+
+i.find(temp) searches for the first occurrence of the substring temp in the string i.
+If temp is found, it returns the index of the first character of temp within i.
+If temp is not found, it returns std::string::npos.
+std::string::npos:
+
+std::string::npos is a constant defined in the std::string class. It represents an invalid position or "not found."
+Its exact value is typically the largest possible value of std::size_t (an unsigned integer type).
+!= std::string::npos:
+
+This checks whether the result of i.find(temp) is not equal to std::string::npos, meaning that the substring temp was found somewhere within the string i.
+Example:
+cpp
+Copy
+Edit
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string i = "hello world";
+    std::string temp = "world";
+
+    if (i.find(temp) != std::string::npos) {
+        std::cout << "'" << temp << "' is found in '" << i << "'.\n";
+    } else {
+        std::cout << "'" << temp << "' is not found in '" << i << "'.\n";
+    }
+
+    return 0;
+
+Edit
+'world' is found in 'hello world'.
+Use Cases:
+Substring Check:
+To see if a string contains another string.
+Position Retrieval:
+If you need to know the exact position where the substring starts, you can directly use the result of find.
+Example:
+cpp
+Copy
+Edit
+size_t pos = i.find(temp);
+if (pos != std::string::npos) {
+    std::cout << "Found '" << temp << "' at position " << pos << ".\n";
+}
+Output:
+arduino
+Copy
+Edit
+Found 'world' at position 6.
+Edge Cases:
+Empty temp:
+If temp is an empty string, find always returns 0, as an empty string is considered to be found at the beginning of any string.
+Example:
+cpp
+Copy
+Edit
+std::string i = "hello";
+std::cout << i.find("") << std::endl; // Outputs 0
+temp Larger Than i:
+If temp is longer than i, find always returns std::string::npos.
+Case Sensitivity:
+find is case-sensitive. To perform a case-insensitive search, additional logic is needed (e.g., converting both strings to lowercase).
+Comparison with ==:
+If you are only looking for an exact match, you should use == instead of find.
+Example:
+cpp
+Copy
+Edit
+if (i == temp) {
+    std::cout << "Strings are exactly equal.\n";
+}
+find is used when you're looking for a substring, not an exact match.
+The expression i.find(temp) != std::string::npos is a common way to check if a substring (temp) exists within a string (i) in C++.
+
+Explanation:
+find Function:
+
+i.find(temp) searches for the first occurrence of the substring temp in the string i.
+If temp is found, it returns the index of the first character of temp within i.
+If temp is not found, it returns std::string::npos.
+std::string::npos:
+
+std::string::npos is a constant defined in the std::string class. It represents an invalid position or "not found."
+Its exact value is typically the largest possible value of std::size_t (an unsigned integer type).
+!= std::string::npos:
+
+This checks whether the result of i.find(temp) is not equal to std::string::npos, meaning that the substring temp was found somewhere within the string i.
+Example:
+cpp
+Copy
+Edit
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string i = "hello world";
+    std::string temp = "world";
+
+    if (i.find(temp) != std::string::npos) {
+        std::cout << "'" << temp << "' is found in '" << i << "'.\n";
+    } else {
+        std::cout << "'" << temp << "' is not found in '" << i << "'.\n";
+    }
+
+    return 0;
+}
+Output:
+csharp
+Copy
+Edit
+'world' is found in 'hello world'.
+Use Cases:
+Substring Check:
+To see if a string contains another string.
+Position Retrieval:
+If you need to know the exact position where the substring starts, you can directly use the result of find.
+Example:
+cpp
+Copy
+Edit
+size_t pos = i.find(temp);
+if (pos != std::string::npos) {
+    std::cout << "Found '" << temp << "' at position " << pos << ".\n";
+}
+Output:
+arduino
+Copy
+Edit
+Found 'world' at position 6.
+Edge Cases:
+Empty temp:
+If temp is an empty string, find always returns 0, as an empty string is considered to be found at the beginning of any string.
+Example:
+cpp
+Copy
+Edit
+std::string i = "hello";
+std::cout << i.find("") << std::endl; // Outputs 0
+temp Larger Than i:
+If temp is longer than i, find always returns std::string::npos.
+Case Sensitivity:
+find is case-sensitive. To perform a case-insensitive search, additional logic is needed (e.g., converting both strings to lowercase).
+Comparison with ==:
+If you are only looking for an exact match, you should use == instead of find.
+Example:
+cpp
+Copy
+Edit
+if (i == temp) {
+    std::cout << "Strings are exactly equal.\n";
+}
+find is used when you're looking for a substring, not an exact match.e expression i.find(temp) != std::string::npos is a common way to check if a substring (temp) exists within a string (i) in C++.
+
+Explanation:
+
+i.find(temp) searches for the first occurrence of the substring temp in the string i.
+If temp is found, it returns the index of the first character of temp within i.
+If temp is not found, it returns std::string::npos.
+std::string::npos:
+
+std::string::npos is a constant defined in the std::string class. It represents an invalid position or "not found."
+Its exact value is typically the largest possible value of std::size_t (an unsigned integer type).
+!= std::string::npos:
+
+This checks whether the result of i.find(temp) is not equal to std::string::npos, meaning that the substring temp was found somewhere within the string i.
+Example:
+cpp
+Copy
+Edit
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string i = "hello world";
+    std::string temp = "world";
+
+    if (i.find(temp) != std::string::npos) {
+        std::cout << "'" << temp << "' is found in '" << i << "'.\n";
+    } else {
+        std::cout << "'" << temp << "' is not found in '" << i << "'.\n";
+    }
+
+    return 0;
+}
+Output:
+csharp
+Copy
+Edit
+'world' is found in 'hello world'.
+Use Cases:
+Substring Check:
+To see if a string contains another string.
+Position Retrieval:
+If you need to know the exact position where the substring starts, you can directly use the result of find.
+Example:
+cpp
+Copy
+Edit
+size_t pos = i.find(temp);
+if (pos != std::string::npos) {
+    std::cout << "Found '" << temp << "' at position " << pos << ".\n";
+}
+Output:
+arduino
+Copy
+Edit
+Found 'world' at position 6.
+Edge Cases:
+Empty temp:
+If temp is an empty string, find always returns 0, as an empty string is considered to be found at the beginning of any string.
+Example:
+cpp
+Copy
+Edit
+std::string i = "hello";
+std::cout << i.find("") << std::endl; // Outputs 0
+temp Larger Than i:
+If temp is longer than i, find always returns std::string::npos.
+Case Sensitivity:
+find is case-sensitive. To perform a case-insensitive search, additional logic is needed (e.g., converting both strings to lowercase).
+Comparison with ==:
+If you are only looking for an exact match, you should use == instead of find.
+Example:
+cpp
+Copy
+Edit
+if (i == temp) {
+    std::cout << "Strings are exactly equal.\n";
+}
+find is used when you're looking for a substring, not an exact match.
+The expression i.find(temp) != std::string::npos is a common way to check if a substring (temp) exists within a string (i) in C++.
+
+Explanation:
+find Function:
+
+i.find(temp) searches for the first occurrence of the substring temp in the string i.
+If temp is found, it returns the index of the first character of temp within i.
+If temp is not found, it returns std::string::npos.
+std::string::npos:
+
+std::string::npos is a constant defined in the std::string class. It represents an invalid position or "not found."
+Its exact value is typically the largest possible value of std::size_t (an unsigned integer type).
+!= std::string::npos:
+
+This checks whether the result of i.find(temp) is not equal to std::string::npos, meaning that the substring temp was found somewhere within the string i.
+Example:
+cpp
+Copy
+Edit
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string i = "hello world";
+    std::string temp = "world";
+
+    if (i.find(temp) != std::string::npos) {
+        std::cout << "'" << temp << "' is found in '" << i << "'.\n";
+    } else {
+        std::cout << "'" << temp << "' is not found in '" << i << "'.\n";
+    }
+
+    return 0;
+}
+Output:
+csharp
+Copy
+Edit
+'world' is found in 'hello world'.
+Use Cases:
+Substring Check:
+To see if a string contains another string.
+Position Retrieval:
+If you need to know the exact position where the substring starts, you can directly use the result of find.
+Example:
+cpp
+Copy
+Edit
+size_t pos = i.find(temp);
+if (pos != std::string::npos) {
+    std::cout << "Found '" << temp << "' at position " << pos << ".\n";
+}
+Output:
+arduino
+Copy
+Edit
+Found 'world' at position 6.
+Edge Cases:
+Empty temp:
+If temp is an empty string, find always returns 0, as an empty string is considered to be found at the beginning of any string.
+Example:
+cpp
+Copy
+Edit
+std::string i = "hello";
+std::cout << i.find("") << std::endl; // Outputs 0
+temp Larger Than i:
+If temp is longer than i, find always returns std::string::npos.
+Case Sensitivity:
+find is case-sensitive. To perform a case-insensitive search, additional logic is needed (e.g., converting both strings to lowercase).
+Comparison with ==:
+If you are only looking for an exact match, you should use == instead of find.
+Example:
+cpp
+Copy
+Edit
+if (i == temp) {
+    std::cout << "Strings are exactly equal.\n";
+}
+find is used when you're looking for a substring, not an exact match.
+
+
+
+
+
+
+
+
+The expression i.find(temp) != std::string::npos is a common way to check if a substring (temp) exists within a string (i) in C++.
+
+Explanation:
+find Function:
+
+i.find(temp) searches for the first occurrence of the substring temp in the string i.
+If temp is found, it returns the index of the first character of temp within i.
+If temp is not found, it returns std::string::npos.
+std::string::npos:
+
+std::string::npos is a constant defined in the std::string class. It represents an invalid position or "not found."
+Its exact value is typically the largest possible value of std::size_t (an unsigned integer type).
+!= std::string::npos:
+
+This checks whether the result of i.find(temp) is not equal to std::string::npos, meaning that the substring temp was found somewhere within the string i.
+Example:
+cpp
+Copy
+Edit
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string i = "hello world";
+    std::string temp = "world";
+
+    if (i.find(temp) != std::string::npos) {
+        std::cout << "'" << temp << "' is found in '" << i << "'.\n";
+    } else {
+        std::cout << "'" << temp << "' is not found in '" << i << "'.\n";
+    }
+
+    return 0;
+}
+Output:
+csharp
+Copy
+Edit
+'world' is found in 'hello world'.
+Use Cases:
+Substring Check:
+To see if a string contains another string.
+Position Retrieval:
+If you need to know the exact position where the substring starts, you can directly use the result of find.
+Example:
+cpp
+Copy
+Edit
+size_t pos = i.find(temp);
+if (pos != std::string::npos) {
+    std::cout << "Found '" << temp << "' at position " << pos << ".\n";
+}
+Output:
+arduino
+Copy
+Edit
+Found 'world' at position 6.
+Edge Cases:
+Empty temp:
+If temp is an empty string, find always returns 0, as an empty string is considered to be found at the beginning of any string.
+Example:
+cpp
+Copy
+Edit
+std::string i = "hello";
+std::cout << i.find("") << std::endl; // Outputs 0
+temp Larger Than i:
+If temp is longer than i, find always returns std::string::npos.
+Case Sensitivity:
+find is case-sensitive. To perform a case-insensitive search, additional logic is needed (e.g., converting both strings to lowercase).
+Comparison with ==:
+If you are only looking for an exact match, you should use == instead of find.
+Example:
+cpp
+Copy
+Edit
+if (i == temp) {
+    std::cout << "Strings are exactly equal.\n";
+}
+find is used when you're looking for a substring, not an exact match.
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    </p>
+</body>
+</html>

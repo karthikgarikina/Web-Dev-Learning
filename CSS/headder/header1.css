@@ -1,0 +1,60 @@
+header{
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    border: 2px solid red;
+    position: relative;  
+    display: flex;
+    justify-content:space-between;              
+}
+.logo{
+    height: 100px;
+}
+.home{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left: 450px;
+    
+}
+.child1{
+    border-radius: 5px;
+    padding: 5px;
+}
+.child2{
+    display: none;
+}
+.home:hover .child1{
+    border: 0px;
+    color: rgb(140, 4, 4);
+}
+.home:hover .child2{
+    display: block;
+    padding-top:0px;
+    padding-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.subclass{
+    padding: 5px;
+}
+.subclass:hover{
+    background-color: rgb(228, 166, 166);
+    border-radius: 20px;
+}
+#about{
+    position: absolute;
+    left: 650px;
+}
+#contact{
+    position: absolute;
+    left: 850px;
+}
+#menu{
+    position: absolute;
+    left: 1400px;
+}
+.subclass
+#menu:active .subclass{
+    display: block;
+    
+}

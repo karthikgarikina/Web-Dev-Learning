@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulating DOM Properties and Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        #text {
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Manipulating DOM Properties and Methods</h2>
+    <p id="text">This is a sample paragraph.</p><br><br>
+    
+    <!-- Buttons to trigger functions -->
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Background Color</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        // Function to change paragraph text
+        function changeText() {
+            let paragraph = document.getElementById("text");
+            paragraph.innerHTML = "The text has been changed!";
+        }
+
+        // Function to change background color of the paragraph
+        function changeColor() {
+            let paragraph = document.getElementById("text");
+            paragraph.style.backgroundColor = "yellow";
+        }
+        function reset(){
+            let paragraph=document.getElementById("text");
+            paragraph.innerHTML="This is a sample paragraph";
+            paragraph.style.backgroundColor="transparent";
+        }
+    </script>
+</body>
+</html>
+45629447890145887855956

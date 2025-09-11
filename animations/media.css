@@ -1,0 +1,41 @@
+body{
+  margin: 0px;
+  background-color: lightblue;
+}
+nav{
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-evenly;
+}
+.logo{
+  height: 70px;
+}
+.options{
+  width: 60vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.options2{
+  display: none;
+}
+.menu{
+  display: none;
+}
+@media (max-width:700px){
+  .options{
+    display: none;
+  }
+  .menu{
+    display: block;
+    margin-left: 20px;
+  }
+  #menu:hover .options2{
+    display: block;
+  }
+}
+

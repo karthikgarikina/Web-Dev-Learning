@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s--WN4RQdAT--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/vgynohkau5mwa89pruo6.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.sun {
+    height: 200px;
+    position: absolute;
+    top: 250px;
+    left: 650px;
+    animation-name: sun;
+    animation-duration: 0.001s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.line1 {
+    height: 300px;
+    width: 300px;
+    border: 3px solid whitesmoke;
+    border-radius: 60%;
+    position:relative;
+    top: 200px;
+    left: 580px;
+}
+.planet1{
+    height: 100px;
+    position: absolute;
+    top:110;
+    left: 110;
+    animation-name: planet;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.line2 {
+    height: 500px;
+    width: 500px;
+    border: 3px solid whitesmoke;
+    border-radius: 60%;
+    position: relative;
+    top:-200px;
+    left: 490px;
+}
+.planet2{
+    height: 150px;
+    position: absolute;
+    top: 190px;
+    left: 200px;
+    animation-name: planet2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.line3{
+    height: 700px;
+    width: 700px;
+    border: 3px solid whitesmoke;
+    border-radius: 60%;
+    position: relative;
+    bottom: 800px;
+    left: 390px;
+}
+.planet3{
+    height: 150px;
+    position: absolute;
+    top: 270px;
+    left: 230px;
+    animation-name: planet3;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sun{
+    0%{
+        transform:rotateZ(0deg);
+    }
+    100%{
+
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes planet {
+    0%{
+        transform:rotateZ(0deg) translate(150px);
+    }
+    100%{
+
+        transform: rotateZ(360deg) translate(150px);
+    }
+}
+@keyframes planet2{
+    0%{
+        transform:rotateZ(0deg) translate(260px);
+    }
+    100%{
+
+        transform: rotateZ(360deg) translate(260px);
+    }
+}
+@keyframes planet3{
+    0%{
+        transform:rotateZ(0deg) translate(350px);
+    }
+    100%{
+
+        transform: rotateZ(360deg) translate(350px);
+    }
+}

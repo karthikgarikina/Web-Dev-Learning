@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chapter1</title>
+        <style>
+            body{
+                display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            }
+            label{
+                font-size: 18px;
+            margin-bottom: 10px;
+            }
+            input {
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">MATHEMATICS TABLE</h1>
+        <label style="text-align: center;">Enter The Number</label><br>
+        <p>NOTE :- Only for Limitt 100 numbers</p><br>
+        <input type="number" id="val" style="text-align: center;"><br>
+        <label >Enter Up To value</label><br>
+        <input type="number" id="val1"><br>
+        <button onclick="shiv()" style="text-align: center;">ENTER</button>
+       <div id="result"></div>
+       <script >
+        function shiv(){
+    let num=document.getElementById("val").value;
+    let n=document.getElementById("val1").value;
+
+    let result="";
+    if(num >100){
+        alert("Erripu**a sarigga chaduvu !!")
+    }
+    else{
+    for(let i=1;i<=n;i++){
+        result += `${num}*${i} = ${num * i}<br>`;
+    }
+}
+    document.getElementById("result").innerHTML=result;
+}
+    </script>
+    </body>
+   
+</html>

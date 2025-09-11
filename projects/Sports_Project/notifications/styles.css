@@ -1,0 +1,125 @@
+
+
+        header {
+            background-color: gray;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .final_nav_bar{
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+.total_nav_bar{
+    display: flex;
+    flex-direction: row;
+}
+.nav_bar{
+    position: relative;
+    top: 30px;
+    left: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px; 
+}
+.section_in_nav_bar{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.section_in_nav_bar:hover {
+    color: blue;
+}
+.section_in_nav_bar:active {
+    color: red;
+}
+
+        .marqueee {
+            background-color: #f70612;
+            color: black;
+            width: 100%;
+  }
+
+        marquee {
+            font-size: 18px;
+            padding: 5px 0;
+            font-weight: bolder;
+        }
+
+        .notification {
+            margin-top: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+    background-color: #e6f2ff;
+        }
+
+        .n1,.n2,.n3,.n4,.n5{
+            background-color: #22fff8;
+color: white;
+;
+            height: 60px;
+            width: 300px;
+            box-shadow: 0 0 5px black;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: black;
+            user-select: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .n1:hover, .n2:hover, .n3:hover,.n4:hover,.n5:hover{
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+            background-color: black;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .footer_image {
+            height: 300px;
+            width: 600px;
+        }
+
+        .footer_container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .footer h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #ffcc00;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        .footer a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }

@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    perspective: 1000px;
+}
+.cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animation 5s infinite linear alternate-reverse;
+}
+@keyframes animation {
+    0%{
+        top: -200px;
+        left: -600px;
+    }
+    100%{
+        top: 200px;
+        left: 600px;
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.child{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.left{
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: green;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.right{
+    transform: rotateY(90deg) translateZ(-100px);
+    background-color: red;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.top{
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.bottom{
+    transform: rotateX(90deg) translateZ(-100px);
+    background-color: orange;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.front{
+    transform:translateZ(100px);
+    background-color: blue;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.back{
+    transform:translateZ(-100px);
+    background-color: yellow;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}

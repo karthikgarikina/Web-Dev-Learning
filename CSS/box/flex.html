@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .flex-container{
+      height: 400px;
+      width: 100%;
+      border: 2px solid red;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap:;
+    }
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      border:2px solid red;
+    }
+
+    .grid{
+      height: 300px;
+      width: 300px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+    .box1{
+      height: 50px;
+      width: 50px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+  </div>
+
+  <div class="grid">
+    <div class="box1"></div>
+  </div>
+</body>
+</html>

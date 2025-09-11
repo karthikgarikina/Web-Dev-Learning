@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            transition: background-color 0.5s linear;
+            margin: 0px;
+        }
+        .menu-icon{
+            color: white;
+            font-size:x-large;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            display: none;
+        }
+        .mobile-options{
+            position: absolute;
+            left: -200px;
+            top: 100px;
+            color: white;
+            width: 200px;
+            height: 100%;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            transition: left 0.5s linear;
+            display: none;
+
+        }
+        .mobile-options div{
+            width:180px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .x{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            font-size: xx-large;
+            cursor: pointer;
+        }
+        .mobile-options div:hover{
+            border-bottom: 2px solid white;
+        }
+
+        .navbar{
+            height: 100px;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .logo{
+            
+            padding-right: 50px;
+            font-size:60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: antiquewhite;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .logo-mobile{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            padding-right: 50px;
+            font-size:60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: antiquewhite;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            display: none;
+        }
+        .navbar div{
+            padding: 20px;
+            font-size: larger;
+            color: white;
+            cursor: pointer;
+        }
+        .navbar div:hover{
+            color: rgb(247, 247, 247);
+        }
+        .mobile-nav{
+            width: 100%;
+            height: 100px;
+            background-color:gray;
+            display: none;
+        }
+        @media (max-width:600px) {
+            .navbar{
+                display: none;
+            }
+            .mobile-nav{
+                display: block;
+            }
+            .mobile-options{
+                display: block;
+            }
+            .menu-icon{
+                display: block;
+            }
+            .logo-mobile{
+                display: block;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        function Open(){
+            document.getElementsByClassName("mobile-options")[0].style="left:0px";
+            document.getElementsByClassName("menu-icon")[0].style="display:none";
+            document.getElementsByTagName("body")[0].style="background-color:lightgray";
+
+        }
+        function Close(){
+            document.getElementsByClassName("mobile-options")[0].style="left:-200px"
+            document.getElementsByClassName("menu-icon")[0].style="display:block"
+            document.getElementsByTagName("body")[0].style="background-color:white";
+        }
+    </script>
+    <div class="navbar">
+        <span class="logo">logo</span>
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+        <div>Profile</div>
+        <div>Contact</div>
+    </div>
+
+    <div class="mobile-nav">
+        <div class="logo-mobile">logo</div>
+        <div onclick="Open()" class="menu-icon">&#9776;</div>
+    </div>
+
+    <div class="mobile-options">
+        <span onclick="Close()" class="x">&times;</span>
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+        <div>Profile</div>
+        <div>Contact</div>
+    </div>
+</body>
+</html>

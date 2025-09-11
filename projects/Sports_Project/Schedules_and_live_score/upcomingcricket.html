@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Match Schedule</title>
+  <style>
+  
+    body {
+      margin: 0;
+      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+      background: 
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url('./../imageaigen2.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      /* font-weight: 700; */
+      color: #b22222;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+   
+    .schedule-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+
+    .match-box {
+      background: #fff;
+      border: 3px solid #b22222;
+      border-radius: 15px;
+      padding: 25px 30px;
+      box-shadow: 0 8px 15px rgba(178, 34, 34, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+    }
+
+    .match-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(178, 34, 34, 0.4);
+    }
+
+    .match-date {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #8b0000;
+    }
+
+    .match-info b {
+      font-size: 1rem;
+      color: #b22222;
+    } 
+
+    .final_nav_bar{
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+.total_nav_bar{
+    display: flex;
+    flex-direction: row;
+}
+.nav_bar{
+    position: relative;
+    left: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 300px; 
+}
+.section_in_nav_bar{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.section_in_nav_bar:hover {
+    color: blue;
+}
+.section_in_nav_bar:active {
+    color: red;
+}
+  </style>
+</head>
+<body>
+  <div class="final_nav_bar">
+    <br>
+      <div class="total_nav_bar">
+          <div class="nav_bar">
+              <a class="section_in_nav_bar" href="#">Live Scores</a>
+              <a class="section_in_nav_bar" href="cricket.html" >Recents</a>
+              <a class="section_in_nav_bar" href="upcomingcricket.html">Upcoming</a>
+          </div>
+      </div>
+  <br><hr>
+  </div>
+  <br><br><br><br><br><br>
+  <h1>Upcoming Cricket Match Schedule</h1>
+  <div class="schedule-container">
+    <div class="match-box">
+      <div class="match-date">Date: 25-06-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>Team1 vs Team2</p>
+        
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 27-06-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamA vs TeamB</p>
+       
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 28-06-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>Team3 vs Team4</p>
+      
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 29-06-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamD vs TeamC</p>
+        
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 30-06-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>Team4 vs TeamC</p>
+       
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 1-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>Team5 vs Team6</p>
+        
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 2-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>Team7 vs Team8</p>
+       
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 3-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamA vs Team6</p>
+       
+      </div>
+    </div>
+
+    <div class="match-box">
+      <div class="match-date">Date: 4-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamB vs Team7</p>
+       
+    </div>
+  </div>
+ <div class="match-box">
+      <div class="match-date">Date: 5-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamA vs Team7</p>
+       
+    </div>
+  </div>
+<div class="match-box">
+      <div class="match-date">Date: 10-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamA vs TeamB</p>
+       
+    </div>
+  </div>
+<div class="match-box">
+      <div class="match-date">Date: 15-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamD vs TeamB</p>
+       
+    </div>
+  </div>
+<div class="match-box">
+      <div class="match-date">Date: 16-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>TeamC vs TeamD</p>
+        
+    </div>
+  </div>
+<div class="match-box">
+      <div class="match-date">Date: 18-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>Team1 vs TeamB</p>
+       
+    </div>
+  </div>
+<div class="match-box">
+      <div class="match-date">Date: 20-07-2025</div>
+      <div class="match-info">
+        <b>Match between</b>
+        <p>Team1 vs Team2</p>
+        
+    </div>
+  </div>

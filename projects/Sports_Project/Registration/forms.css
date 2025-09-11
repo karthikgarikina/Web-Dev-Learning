@@ -1,0 +1,55 @@
+body{
+    background: #f4f6f8;
+}
+.container{
+    border-radius: 8px;
+    max-width: 600px;
+    background: white;
+    padding: 30px 40px;
+    margin: 30px auto;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #004080;
+  font-weight: bold;
+  font-size: 28px;
+}
+table{
+    width: 100%;
+}
+input[type="text"],select {
+  width: 250px;
+  height: 36px;
+  padding: 6px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.submit-btn{
+    width: 100%;
+    padding: 14px;
+    background-color: #004080;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+td{
+    padding-top: 20px;
+    font-weight: 700;
+}
+p{
+    font-weight:50;
+}
+.member-label-box {
+  vertical-align: top;
+}
+.member-box{
+    width: 100px;         
+    height: 80px;
+    flex-direction: column;
+    gap:10px;
+    overflow: auto;   
+}

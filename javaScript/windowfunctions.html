@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Window Object Properties and Methods Demo</h2>
+
+    <!-- Buttons to trigger window functions -->
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="getUserInput()">Get User Input</button>
+    <button onclick="confirmAction()">Confirm Action</button>
+    <button onclick="openNewTab()">Open New Tab</button>
+    <button onclick="reloadPage()">Reload Page</button>
+    <button onclick="showWindowSize()">Show Window Size</button>
+
+    <script>
+        // 1. Show alert using window.alert()
+        function showAlert(){
+            alert("namasthe amigo jagrathaga unduuh!!!");
+        }
+
+        // 2. Get user input using window.prompt()
+        function getUserInput(){
+            let name =prompt("name anti mamas:");
+            if(name){
+                alert("ohh "+name+" mama nuvvaa");
+            }
+            else alert("cheppu mama peru");
+        }
+
+        // 3. Confirm user action using window.confirm()
+        function confirmAction(){
+            let confirmation =confirm("hey do you want to procees?")
+            if(confirmation){
+                alert("okay thanks for confirmation.");
+            }
+            else alert("okay ill stop the process!");
+        }
+
+        // 4. Open a new tab using window.open()
+        function openNewTab() {
+            window.open("https://www.google.com");
+        }
+
+        // 5. Reload the current page using location.reload()
+        function reloadPage() {
+            location.reload();
+        }
+
+        // 6. Show window size using window.innerWidth and window.innerHeight
+        function showWindowSize() {
+            alert("Window Width: " + window.innerWidth + "px\n" +
+                  "Window Height: " + window.innerHeight + "px");
+        }
+    </script>
+
+</body>
+</html>

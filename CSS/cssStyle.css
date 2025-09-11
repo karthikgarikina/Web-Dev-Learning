@@ -1,0 +1,40 @@
+/* h2{
+    color: aliceblue;
+    background-color: red;
+}
+.para1{
+    color: rgb(0,0,355);
+}
+.para2{
+    color: rgba(0,355,355,1);
+}
+.para3{
+    color:#0f0000;
+} */
+
+.red1{
+    color: hsl(0, 100%, 30%);
+}
+.red2{
+    color: hsl(0, 100%, 40%);
+}
+.red3{
+    color: hsl(0, 100%, 50%);
+}
+.red4{
+    color: hsl(0, 100%, 70%);
+}
+.red5{
+    color: hsl(0, 100%, 85%);
+}
+
+.textDec{
+    /* direction: rtl; */
+    text-align: right;
+
+
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 0.5px;
+}

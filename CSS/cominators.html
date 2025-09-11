@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            .spaceCombinator h1{
+                color: red;
+            }
+
+            .greaterthanCombinator > h1{
+                color: blue;
+            }
+
+            .tildCombinator ~ h1{
+                color: green;
+            }
+
+            .plusCombinator + h1{
+                color: orangered;
+            }
+
+            .nthchildCombinator :nth-child(2){
+                color: red;
+            }
+
+            .notCombinator :not(.demo1){
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="spaceCombinator">
+            <h1>first h1</h1>
+            <h2>first h2</h2>
+            <div>
+                <h1>inner h1</h1>
+            </div>
+            <h1>second h1</h1>
+        </div><br><br>
+
+        <div class="greaterthanCombinator">
+            <h1>first h1</h1>
+            <h2>first h2</h2>
+            <div>
+                <h1>inner h1</h1>
+            </div>
+            <h1>second h1</h1>
+        </div><br><br>
+
+        
+        <div class="plusCombinator">div</div>
+        <h1>h1</h1>
+        <div>div</div>
+        <h1>h1</h1><br><br>
+
+
+        <div class="tildCombinator">div</div>
+        <h1>h1</h1>
+        <div>div</div>
+        <h1>h1</h1>
+        <h1>h1</h1><br><br>
+
+        <div class="nthchildCombinator">
+            <h1>1</h1>
+            <h1>2</h1>
+            <h1>3</h1>
+            <h1>4</h1>
+        </div><br><br>
+
+        <div class="notCombinator">
+            <div class="demo1">demo1</div>
+            <div class="demo2">demo1</div>
+            <div class="demo3">demo1</div>
+        </div>
+
+
+    </body>
+</html>

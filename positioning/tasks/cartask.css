@@ -1,0 +1,202 @@
+.overall{
+    height: 100%;
+    width: 160%;
+    border: 2px solid black;
+    position: relative;
+    background-color: rgba(36, 238, 238, 0.345);
+}
+.sun{
+    font-size: 140px;
+    position: fixed;
+    right: 300px;
+    top: 40px;
+}
+.road{
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(127, 117, 117);
+}
+.block1{
+    height: 20px;
+    width:200px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    position: relative;
+    top: 102px;
+    left:0px;
+}
+.block2{
+    height:20px;
+    width:250px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    position: relative;
+    top: 83px;
+    left:360px;
+}
+.block3{
+    height:20px;
+    width:250px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    position: relative;
+    top: 63px;
+    left:770px;
+}
+.block4{
+    height:20px;
+    width:250px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    position: relative;
+    top: 43px;
+    left:1170px;
+}
+.block5{
+    height:20px;
+    width:250px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    position: relative;
+    top: 23px;
+    left:1600px;
+}
+.block6{
+    height:20px;
+    width:250px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    position: relative;
+    top: 3px;
+    left:2050px;
+}
+.car{
+    height: 200px;
+    width: 450px;
+    position: fixed;
+    bottom: 90px;
+    left: 100px;
+}
+.part1{
+    height: 80px;
+    width: 400px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    border-radius: 50px 100px 0px 0px;
+    z-index: 0;
+}
+.part2{
+    height: 70px;
+    width: 180px;
+    background-color:hsl(316, 90%, 4%);
+    position: absolute;
+    right: 220px;
+    top: 35px;
+    border-radius: 30px 70px 0px 0px;
+    z-index: 10;
+}
+.tyre1{
+    height: 80px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    right: 310px;
+    bottom: 2px;
+    border: 2px solid white;
+}
+.tyre2{
+    height: 75px;
+    width: 75px;
+    background-color: black;
+    border-radius: 50%;
+    z-index:2;
+    position: absolute;
+    right: 110px;
+    bottom: 2px;
+    border: 2px solid white;
+}
+
+.tree1{
+    height: 300px;
+    width: 150px;
+    position: relative;
+    top: 200px;
+    left: 500px;
+}
+.top11{
+    height: 70px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 40px;
+}
+.top12{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 55px;
+    top: 50px;
+    z-index: 4;
+}
+.top13{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    z-index: 3;
+}
+.branch1{
+    height: 200px;
+    width: 30px;
+    background-color: brown;
+    position: absolute;
+    top: 95px;
+    left: 50px;
+    z-index: 0;
+
+}
+.cloud{
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    bottom:500px;
+}
+.cloud1{
+    height: 90px;
+    width: 150px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+
+}
+.cloud2{
+    height: 90px;
+    width: 150px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+}
+.cloud3{
+    height: 90px;
+    width: 150px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top:70px;
+}

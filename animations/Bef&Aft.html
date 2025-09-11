@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100svh;
+                gap: 40px;
+                background-color: darkgray;
+                font-weight: bold;
+                font-family:Arial;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .button{
+                height: 40px;
+                width: 100px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 1px 1px lightgrey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                background-color: skyblue;
+                color: darkblue;
+                
+            }
+            .button::before{
+                height: 40px;
+                width: 100px;
+                content: "";
+                position: absolute;
+                background-image: linear-gradient(to top left,skyblue,white);
+                transform: translateX(-100px);
+                transition: transform .5s linear;
+    
+                z-index: -1;
+            }
+            .button:hover::before{
+                transform: translateX(0px);
+            }
+
+            .button2{
+                height: 40px;
+                width: 100px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 1px 1px gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+                background-color: black;
+            }
+            .button2::after{
+                position: absolute;
+                content: "";
+                height: 30px;
+                width: 30px;
+                border-radius: 15px;
+                background-color: whitesmoke;
+                opacity: 0.5;
+                transition: all .3s linear;
+                transform: translateX(47px) translateY(15px);
+
+            }
+            .button2:hover::after{
+                transform: translateX(0px) translateY(0px);
+                width: 90px;
+                height: 30px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="button"><a style="color:black;" href="#">For HD</a></div>
+        <div class="button2"><a href="#">Click me</a></div>
+    </body>
+</html>

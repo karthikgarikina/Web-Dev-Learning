@@ -1,0 +1,130 @@
+.schedule_header 
+{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #003366;
+    color: white;
+}
+
+.schedule_header h1 
+{
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.schedule_header p 
+{
+    font-size: 18px;
+    color: #ccc;
+}
+
+.sport_selection 
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.selection
+{
+    display: flex;
+    flex-direction: row;;
+    gap: 80px;
+}
+
+.sport_card 
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #003366;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sport_card:hover 
+{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff;
+}
+
+.footer 
+{
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer_image{
+    height: 300px;
+    width: 600px;
+}
+
+.footer_container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.footer p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.final_nav_bar{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+.total_nav_bar{
+    display: flex;
+    flex-direction: row;
+}
+.nav_bar{
+    position: relative;
+    top: 30px;
+    left: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px; 
+}
+.section_in_nav_bar{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.section_in_nav_bar:hover {
+    color: blue;
+}
+.section_in_nav_bar:active {
+    color: red;
+}

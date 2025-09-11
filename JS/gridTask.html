@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        .board{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+  </head>
+  <body>
+    <input type="number" class="row" placeholder="row">
+    <input type="number" class="column" placeholder="column">
+    <input type="submit" onclick="fun()">
+    <div class="board" >
+    
+    </div>
+    <script>
+        function fun(){
+            document.querySelector('.board').innerHTML = '';
+            let rows=document.querySelector('.row').value;
+            let cols=document.querySelector('.column').value;
+            let ci=1;
+            for(let i=0;i<rows;i++){
+                if(rows*cols%2===0){
+                    if(i%2===0){
+                        ci=1;
+                    }
+                    else{
+                        ci=0;
+                    }
+                }
+                let roww=document.createElement('div');
+                roww.style.display="flex";
+                roww.style.flexDirection="row";
+                for(let j=0;j<cols;j++){
+                    let d=document.createElement('div');
+                    d.style.height="40px";
+                    d.style.width="40px";
+                    if(ci===0){
+                        ci=1;
+                        d.style.backgroundColor="white";
+                    }
+                    else{
+                        ci=0;
+                        d.style.backgroundColor="black";
+                    }
+                    roww.appendChild(d);
+                }
+                document.querySelector('.board').appendChild(roww);
+            }
+        }
+       
+    </script>
+  </body>
+</html>

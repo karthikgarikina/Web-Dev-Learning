@@ -1,0 +1,24 @@
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+
+    padding: 20px;
+    border: 2px solid black;
+    margin: 40px;
+    border-top-width: 10px; 
+
+    border-style: solid;
+    border-top-left-radius: 0px;
+
+    border-image: url(https://res.cloudinary.com/dsffxicqm/image/upload/v1737886494/IMG-20240913-WA01733_jv7v0m.jpg) 10 10 round;
+      
+  }
+  .block {
+    display: block;
+    /* display: inline-block; none also avilable */
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+  }
+  

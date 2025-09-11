@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+  <style>
+    form {
+      height: 300px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    div {
+      height: 100px;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <form onsubmit="details(event)">
+    <label for="name">Enter Name</label>
+    <input type="text" id="name" required>
+
+    <label for="age">Enter Age</label>
+    <input type="number" id="age" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- <div id="result"></div> -->
+
+  <script>
+    function details(event) {
+      event.preventDefault(); 
+
+      var name = document.getElementById("name").value;
+      var age = document.getElementById("age").value;
+
+      var res = name + " " + age;
+      console.log(res);
+    }
+  </script>
+
+</body>
+</html>

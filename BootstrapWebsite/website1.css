@@ -1,0 +1,17 @@
+.nav-logo{
+    height: 60px;
+}
+.mass-body{
+    height: 100vh;
+    background-image: url('https://res.cloudinary.com/nihars3/image/upload/v1696232927/photo-1619429858348-2d5ad1547e6c_nnvynb.jpg');
+
+}
+.item-nav{
+    color: white;
+}
+.item-nav:hover{
+    color: rgb(59, 230, 59);
+}
+.anchor{
+    margin-left: auto;
+}

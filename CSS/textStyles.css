@@ -1,0 +1,19 @@
+.para1{
+    color: red;
+    text-align: justify;
+    text-decoration: underline rgb(155, 213, 84) 3px dotted;
+}
+.para2{
+    color: blue;
+    text-transform: lowercase;
+    text-indent: 60px;
+}
+.para3{
+    color: aquamarine;
+    text-shadow: 2px 5px 5px gray ; /*hor,vert,density(alpha),color */
+}
+.para4{
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 100px;
+}
