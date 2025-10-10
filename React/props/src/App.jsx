@@ -23,9 +23,9 @@ function App() {
      <Count/> */}
      {/* <HooksForArr/> */}
      {/* <HooksTask/> */}
-     {/* <DynamicCardsByHooks/> */}
+     <DynamicCardsByHooks/>
 
-      <UseEffect1 />
+      {/* <UseEffect1 /> */}
     </>
   )
 }

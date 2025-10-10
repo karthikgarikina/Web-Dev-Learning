@@ -1,12 +1,12 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Contact from './Contact';
-// import Home from './Home';
+import Contact from './Contact';
+import Home from './Home';
 
-// import Cards from './Cards';
-// import CardDetails from './CardDetails';
+import Cards from './Cards';
+import CardDetails from './CardDetails';
 
-// import ForFiles from './ForFiles';
+import ForFiles from './ForFiles';
 
 import { useState } from 'react';
 import Store from './Store';
@@ -29,17 +29,17 @@ function App() {
     //     </Routes>
     // </BrowserRouter>
 
-    // <ForFiles/>
+    <ForFiles/>
 
 
-    <Store.Provider value={{Count,setCount}}>
-      <BrowserRouter>
-          <Routes>
-              <Route path="/" element={<Page1/>}/>  
-              <Route path="/page2" element={<Page2/>}/> 
-          </Routes>
-      </BrowserRouter>
-    </Store.Provider>
+    // <Store.Provider value={{Count,setCount}}>
+    //   <BrowserRouter>
+    //       <Routes>
+    //           <Route path="/" element={<Page1/>}/>  
+    //           <Route path="/page2" element={<Page2/>}/> 
+    //       </Routes>
+    //   </BrowserRouter>
+    // </Store.Provider>
 
     
   );
