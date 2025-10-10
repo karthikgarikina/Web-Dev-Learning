@@ -36,7 +36,7 @@ const UseEffect1 = () =>{
           setcpd(temp)
           }
           else{
-            setcpd([]);
+            setcpd(cd);
           }
      },[uq])
     return(

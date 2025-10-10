@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.options{
+    border: 2px solid red;
+    display:  flex;
+    padding: 50px;
+}
+.options div{
+    color: black;
+    border: 2px solid green;
+}
