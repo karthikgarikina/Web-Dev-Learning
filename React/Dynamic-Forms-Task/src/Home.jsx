@@ -7,12 +7,11 @@ function Home(){
                            'email':"",
                            'age':"",
                            'image':"",
-                           'Discription': ""
+                           'discription': ""
                          });
     const [cards,setCards]=useState([]);
     
     const getData=(event,key)=>{
-        event.preventDefault();
         if(key=='image'){
             let temp=event.target.files[0];
             const url=URL.createObjectURL(temp);
@@ -25,13 +24,13 @@ function Home(){
     }
     const Submit = (event) => {
         event.preventDefault();
-        setCards(...cards,form);
+        setCards([...cards,form]);
         setForm({'name' : "",
                            'college' : "",
                            'email':"",
                            'age':"",
                            'image':"",
-                           'Discription': ""
+                           'discription': ""
                          });
         console.log(cards);                 
     }
@@ -41,20 +40,20 @@ function Home(){
            <div className="main">
               <div className="view">View Cards</div>
               <h1>Create form</h1>
-              <form action={(event)=>Submit(event)}>
+              <form onSubmit={Submit}>
                     <label htmlFor="name">Name: </label>
                     <input type="text" name="name" value={form.name} onChange={(event)=>getData(event,'name')} /><br /><br />
 
                     <label htmlFor="college">College: </label>
-                    <input type="text" name="college" value={form.name} onChange={(event)=>getData(event,'name')} /><br /><br />
+                    <input type="text" name="college" value={form.college} onChange={(event)=>getData(event,'college')} /><br /><br />
                     <label htmlFor="email">Email: </label>
-                    <input type="email" name="email" value={form.name} onChange={(event)=>getData(event,'name')} /><br /><br />
+                    <input type="email" name="email" value={form.email} onChange={(event)=>getData(event,'email')} /><br /><br />
                     <label htmlFor="age">Age: </label>
-                    <input type="number" name="age" value={form.name} onChange={(event)=>getData(event,'name')} /><br /><br />
+                    <input type="number" name="age" value={form.age} onChange={(event)=>getData(event,'age')} /><br /><br />
                     
                     <label htmlFor="image">Upload image </label><br />
-                    <input type="file" name="image" value={form.name} onChange={(event)=>getData(event,'name')} /><br /><br />
-                    <textarea name="discription" id="discription" placeholder="Some Words.." rows={5} cols={35} value={form.name} onChange={(event)=>getDate(event,'name')} ></textarea><br />
+                    <input type="file" name="image" onChange={(event)=>getData(event,'image')} /><br /><br />
+                    <textarea name="discription" id="discription" placeholder="Some Words.." rows={5} cols={35} value={form.discription} onChange={(event)=>getData(event,'discription')} ></textarea><br />
                     <button type="submit">Submit</button>
               </form> 
 
